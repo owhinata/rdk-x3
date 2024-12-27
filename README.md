@@ -7,6 +7,8 @@
 
 GitHub
 - https://github.com/D-Robotics/hobot_mipi_cam
+- https://github.com/D-Robotics/rdk_model_zoo
+- https://github.com/D-Robotics/line_follower
 
 ### MIPI Cameraをプレビューする
 
