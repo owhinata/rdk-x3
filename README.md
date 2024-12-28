@@ -1,7 +1,6 @@
-# rdk-x3
+# RDK X3
 
 ### リンク
-
 - https://d-robotics.github.io/rdk_doc/en/RDK
 - https://archive.d-robotics.cc/
 
@@ -10,7 +9,7 @@ GitHub
 - https://github.com/D-Robotics/rdk_model_zoo
 - https://github.com/D-Robotics/line_follower
 
-### MIPI Cameraをプレビューする
+### MIPI CameraをWebブラウザプレビューする
 
 **Console1** (Aquired raw image from mipi camera)
 ```bash
@@ -29,3 +28,7 @@ $ ros2 launch websocket websocket.launch.py websocket_image_topic:=/image_jpeg w
 ```
 **Open a web browser** and enter `http://IPAddress:8000`
 
+### MIPI CameraをRVIZでプレビューする
+
+**※ WSLの場合はWindowのファイアウォールを解放する必要がある**  
+https://qiita.com/zakutakumi/items/fb1be336b06d73bbd1cb
