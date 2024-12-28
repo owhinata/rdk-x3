@@ -32,3 +32,17 @@ $ ros2 launch websocket websocket.launch.py websocket_image_topic:=/image_jpeg w
 
 **※ WSLの場合はWindowのファイアウォールを解放する必要がある**  
 https://qiita.com/zakutakumi/items/fb1be336b06d73bbd1cb
+
+On the device
+```
+$ ros2 launch mipi_cam mipi_cam.launch.py mipi_out_format:=bgr8 mipi_image_width:=480 mipi_image_height:=272 mipi_io_method:=ros mipi_video_device:=IMX219
+```
+
+On the devlopment pc
+```
+$ ros2 run rviz2 rviz2
+-> Add
+    -> By topic
+        -> /image_raw
+            -> image
+```
