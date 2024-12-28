@@ -67,3 +67,18 @@ $ sudo apt-get install ros-humble-rqt-image-view ros-humble-rqt ros-humble-image
 $ ros2 run rqt_image_view rqt_image_view
 -> Select /image_raw_compressed
 ```
+
+### RealSenseをプレビューする
+
+On the device
+```
+$ sudo apt-get install ros-$ROS_DISTRO-librealsense2*
+$ sudo apt-get install ros-$ROS_DISTRO-realsense2-*
+
+$ ros2 launch realsense2_camera rs_launch.py enable_infra1:=true pointcloud.enable:=true
+```
+
+On the development pc
+```
+$ ros2 run rviz2 rviz2
+```
