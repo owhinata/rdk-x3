@@ -9,6 +9,10 @@ GitHub
 - https://github.com/D-Robotics/rdk_model_zoo
 - https://github.com/D-Robotics/line_follower
 
+RealSense
+- https://github.com/IntelRealSense/librealsense
+- https://github.com/IntelRealSense/realsense-ros/tree/ros2-development
+
 ### MIPI CameraをWebブラウザプレビューする
 
 **Console1** (Aquired raw image from mipi camera)
