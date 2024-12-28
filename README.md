@@ -46,3 +46,20 @@ $ ros2 run rviz2 rviz2
         -> /image_raw
             -> image
 ```
+
+### MIPI CameraをRQtでプレビューする
+
+On the device
+```
+$ ros2 launch mipi_cam mipi_cam.launch.py mipi_video_device:=IMX219
+
+$ ros2 launch hobot_codec hobot_codec_encode.launch.py codec_out_format:=jpeg codec_pub_topic:=/image_raw/compressed
+```
+
+On the development pc
+```
+$ sudo apt-get install ros-humble-rqt-image-view ros-humble-rqt ros-humble-image-transport-plugins
+
+$ ros2 run rqt_image_view rqt_image_view
+-> Select /image_raw_compressed
+```
